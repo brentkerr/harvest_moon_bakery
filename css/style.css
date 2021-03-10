@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans');
+
+* {
+  font-family: Josefin Sans;
+  outline: none;
+}
+
+html,
+body,
+.view,
+#container {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a:link, a:hover, a:active, a:visited {
+  color: #65c667;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 0px 0px 30px 0px; 
+  margin: 0 auto;
+  min-width: 130px;
+}
+
+h1 img {
+  padding: 0px 5px 8px 0px;
+  width: 30px;
+}
+
+hr {
+  padding: 5px;
+  border:none;
+}
+
+textarea {
+  resize: none;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 80px 5px;
+}
+
+.container {
+  max-width: 750px;
+}
+
+.navbar {
+  background: rgba(244, 242, 238,.9);
+  border: none;
+  min-height: 55px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar li {
+  padding-top: 4px;
+}
+
+#home, #contact, #purchase {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+}
+
+#home {
+  background-image: url("../img/backgrounds/bg-sourdough.jpg");
+  padding-top: 14rem;
+  filter: sepia(20%);
+}
+
+#home img {
+  margin: auto;
+}
+
+#about {
+  background-color: #F4F2EE;
+}
+
+#about h1, #about p {
+  color: #333;
+}
+
+#about p {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+#about .logo {
+  padding-top: 60px;
+  width: 200px;
+}
+
+#purchase {
+  background-image: url("../img/backgrounds/bg-shop.jpg");
+}
+
+#purchase .purchase-wrap {
+  margin: auto;
+  box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+  background-color: #F4F2EE;
+}
+
+#purchase .col-sm-6 {
+  padding: 10px;
+}
+
+#purchase h1, #purchase h5 {
+  color: #F4F2EE;
+}
+
+#purchase h2, #purchase h4, #purchase h6 {
+  color: #333;
+  margin: 0 auto;
+}
+
+#purchase h2 {
+  font-size: 1.5em;
+  padding: 0px;
+}
+
+#purchase h4 {
+  display: inline-block;
+  font-size: 1.1em;
+  padding: 0px 5px 5px 0px;
+  text-align: right;
+  width: 40px;
+}
+
+#purchase h5 {
+  font-size: .9em;
+  padding: 10px;
+  margin: 15px auto;
+  background-color: rgba(0,0,0,.5);
+  max-width: 450px;
+}
+
+#purchase h6 {
+  font-size: .8em;
+  padding: 5px 0px 20px 0px;
+}
+
+#purchase p {
+  display: inline-block;
+  font-size: 1em;
+  padding: 0px 0px 15px 0px;
+  text-align: justify;
+}
+
+#purchase .purchase-single-output,
+#purchase .purchase-subscription-output {
+  margin: 6px 5px 0px 4px;
+  padding: 10px 15px;
+  font-size: 1em;
+}
+
+#purchase .purchase-top-image {
+  padding: 3px;
+  filter: sepia(30%);
+  transition: filter ease .5s;
+}
+
+#purchase .purchase-top-image:hover {
+  filter: sepia(0%);
+  transition: filter ease .5s;
+}
+
+#purchase .carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+#purchase .carousel-indicators li {
+  background-color: rgba(0,0,0,.1);
+  opacity: .7;
+  border: 0;
+  margin: 0px 5px;
+}
+
+#purchase .carousel-indicators .active {
+  background-color: rgba(0,0,0,.3);
+  opacity: .5;
+}
+
+#purchase .carousel-indicators li:hover {
+  opacity: 1;
+  border: 0;
+}
+
+#purchase .carousel-indicators {
+  bottom: -35px;
+}
+
+#purchase .carousel-inner {
+  margin-bottom: 22px;
+}
+
+#purchase .item img {
+  height: 100%;
+  width: 100%;
+}
+
+#purchase .purchase-subscription-output,
+#purchase .purchase-single-output {
+  display: none;
+}
+
+#purchase .purchase-right,
+#purchase .purchase-right {
+  padding: 10px;
+}
+
+#purchase .col-sm-4,
+#purchase .col-sm-5,
+#purchase .col-sm-7,
+#purchase .col-sm-8,
+#purchase .col-sm-12 {
+  padding: 4px;
+}
+
+#purchase .purchase-name {
+  margin-bottom: 8px;
+}
+
+#purchase .order-row {
+  margin: 0px;
+}
+
+#purchase textarea {
+  height: 76px;
+}
+
+#contact {
+  background-image: url("../img/backgrounds/bg-wheat.jpg");
+}
+
+#contact h1, #contact h2, #contact h3, #contact p {
+  color: #F4F2EE;
+}
+
+#contact h2 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+#contact h3 {
+  font-size: 1.1em;
+  padding: 5px 0px 30px 0px;
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+#contact p {
+  font-size: 1.1em;
+  padding: 0px 0px 0px 15px;
+  text-align: left;
+}
+
+#contact .alert-danger {
+  padding: 5px;
+  margin: 5px 0px 0px 0px;
+}
+
+#contact .form-control {
+  background-color: #F4F2EE;
+  box-shadow: 3px 3px 8px rgba(0,0,0,.2);
+}
+
+#contact .btn {
+  box-shadow: 3px 3px 8px rgba(0,0,0,.2);
+  margin: 10px;
+  min-width: 90px;
+}
