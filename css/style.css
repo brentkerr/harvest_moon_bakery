@@ -92,6 +92,7 @@ section {
 }
 
 #home img {
+  max-width: 360px;
   margin: auto;
 }
 
